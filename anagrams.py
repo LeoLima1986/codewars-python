@@ -9,10 +9,7 @@ Write a function that will find all the anagrams of a word from a list. You will
 def anagrams(word, words):
   newlist = []
   word_sort = sorted(word)
-  print(word_sort)
-  print(words)
   for i in words:
-    print(sorted(i))
     if sorted(i) == word_sort:
       newlist.append(i)
   return newlist
